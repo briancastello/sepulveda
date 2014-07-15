@@ -1,4 +1,4 @@
 sepulveda
 =========
 
-Sepulveda Hacking Instrumentation Toolset
+sepulveda hacking & instrumentation toolset
