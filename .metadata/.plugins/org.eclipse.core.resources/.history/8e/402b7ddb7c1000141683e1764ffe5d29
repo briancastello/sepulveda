@@ -1,0 +1,29 @@
+package pdf;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.Arrays;
+
+import org.apache.pdfbox.exceptions.COSVisitorException;
+import org.apache.pdfbox.util.PDFMergerUtility;
+
+public class Pdfmerge {
+
+	public static void main(String[] args) throws COSVisitorException, IOException {
+		PDFMergerUtility ut = new PDFMergerUtility();
+		String s = "/home/christopher/Documents/ALS/Printable1-1";
+		System.out.println(s);
+		File f = new File(s);
+		String[] fl = f.list();
+		Arrays.sort(fl);
+		for(String ss:fl){
+			System.out.println(ss);
+			if(ss.contains(".pdf")){
+			ut.addSource(s+"/"+ss);
+			}
+		}
+		ut.setDestinationFileName(s + "/f/print");
+		ut.mergeDocuments();
+	}
+
+}

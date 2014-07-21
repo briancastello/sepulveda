@@ -1,0 +1,152 @@
+!SESSION 2014-07-20 16:12:12.969 -----------------------------------------------
+eclipse.buildId=4.4.0.I20140606-1215
+java.version=1.7.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.standard.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.standard.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-07-20 16:13:50.982
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-07-20 16:13:50.983
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\assessor'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jface 2 0 2014-07-20 16:17:18.353
+!MESSAGE The image could not be loaded: URLImageDescriptor(http://marketplace.eclipse.org/sites/default/files/eclipse-marketplace.png)
+!STACK 0
+org.eclipse.jface.resource.DeviceResourceException: Unable to create resource URLImageDescriptor(http://marketplace.eclipse.org/sites/default/files/eclipse-marketplace.png)
+	at org.eclipse.jface.resource.ImageDescriptor.createResource(ImageDescriptor.java:169)
+	at org.eclipse.jface.resource.DeviceResourceManager.allocate(DeviceResourceManager.java:58)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:89)
+	at org.eclipse.jface.resource.ResourceManager.createImageWithDefault(ResourceManager.java:192)
+	at org.eclipse.jface.resource.ImageRegistry.get(ImageRegistry.java:217)
+	at org.eclipse.epp.internal.mpc.ui.wizards.CatalogSwitcher.getCatalogIcon(CatalogSwitcher.java:188)
+	at org.eclipse.epp.internal.mpc.ui.wizards.CatalogSwitcher.access$4(CatalogSwitcher.java:179)
+	at org.eclipse.epp.internal.mpc.ui.wizards.CatalogSwitcher$3.run(CatalogSwitcher.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.jface 2 0 2014-07-20 16:17:20.143
+!MESSAGE The image could not be loaded: URLImageDescriptor(http://marketplace.eclipse.org/sites/default/files/obeo-marketplace.png)
+!STACK 0
+org.eclipse.jface.resource.DeviceResourceException: Unable to create resource URLImageDescriptor(http://marketplace.eclipse.org/sites/default/files/obeo-marketplace.png)
+	at org.eclipse.jface.resource.ImageDescriptor.createResource(ImageDescriptor.java:169)
+	at org.eclipse.jface.resource.DeviceResourceManager.allocate(DeviceResourceManager.java:58)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:89)
+	at org.eclipse.jface.resource.ResourceManager.createImageWithDefault(ResourceManager.java:192)
+	at org.eclipse.jface.resource.ImageRegistry.get(ImageRegistry.java:217)
+	at org.eclipse.epp.internal.mpc.ui.wizards.CatalogSwitcher.getCatalogIcon(CatalogSwitcher.java:188)
+	at org.eclipse.epp.internal.mpc.ui.wizards.CatalogSwitcher.access$4(CatalogSwitcher.java:179)
+	at org.eclipse.epp.internal.mpc.ui.wizards.CatalogSwitcher$3.run(CatalogSwitcher.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.equinox.p2.discovery 4 0 2014-07-20 16:18:21.116
+!MESSAGE MarketplaceDiscoveryStrategy failed with an error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Cannot complete request to http://marketplace.eclipse.org/api/p/search/apachesolr_search/egit?product=org.eclipse.epp.package.standard.product&os=win32&runtime.version=3.10.0.v20140318-2214&client=org.eclipse.epp.mpc.core&java.version=1.7.0_60&product.version=4.4.0.20140612-0500&ws=win32&platform.version=4.4.0.v20140606-1215&nl=en_US: HTTP Server 'Internal Error': http://marketplace.eclipse.org/api/p/search/apachesolr_search/egit?product=org.eclipse.epp.package.standard.product&os=win32&runtime.version=3.10.0.v20140318-2214&client=org.eclipse.epp.mpc.core&java.version=1.7.0_60&product.version=4.4.0.20140612-0500&ws=win32&platform.version=4.4.0.v20140606-1215&nl=en_US
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:148)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:93)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:80)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:272)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService$2.doSearch(CachingMarketplaceService.java:112)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:127)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.search(CachingMarketplaceService.java:109)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceDiscoveryStrategy.performQuery(MarketplaceDiscoveryStrategy.java:335)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog$1.run(MarketplaceCatalog.java:74)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performDiscovery(MarketplaceCatalog.java:364)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performQuery(MarketplaceCatalog.java:72)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer$4.run(MarketplaceViewer.java:404)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.eclipse.core.runtime.CoreException: HTTP Server 'Internal Error': http://marketplace.eclipse.org/api/p/search/apachesolr_search/egit?product=org.eclipse.epp.package.standard.product&os=win32&runtime.version=3.10.0.v20140318-2214&client=org.eclipse.epp.mpc.core&java.version=1.7.0_60&product.version=4.4.0.20140612-0500&ws=win32&platform.version=4.4.0.v20140606-1215&nl=en_US
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.stream(RepositoryTransport.java:180)
+	at sun.reflect.GeneratedMethodAccessor41.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.epp.internal.mpc.core.util.AbstractP2TransportFactory.invokeStream(AbstractP2TransportFactory.java:35)
+	at org.eclipse.epp.internal.mpc.core.util.TransportFactory$1.stream(TransportFactory.java:107)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:128)
+	... 13 more
+Caused by: org.eclipse.ecf.filetransfer.IncomingFileTransferException: HttpComponents connection error response code 500.
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:662)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:885)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:576)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:389)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.read(FileReader.java:240)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.stream(RepositoryTransport.java:172)
+	... 19 more
+!SUBENTRY 1 org.eclipse.epp.mpc.core 4 0 2014-07-20 16:18:21.117
+!MESSAGE Cannot complete request to http://marketplace.eclipse.org/api/p/search/apachesolr_search/egit?product=org.eclipse.epp.package.standard.product&os=win32&runtime.version=3.10.0.v20140318-2214&client=org.eclipse.epp.mpc.core&java.version=1.7.0_60&product.version=4.4.0.20140612-0500&ws=win32&platform.version=4.4.0.v20140606-1215&nl=en_US: HTTP Server 'Internal Error': http://marketplace.eclipse.org/api/p/search/apachesolr_search/egit?product=org.eclipse.epp.package.standard.product&os=win32&runtime.version=3.10.0.v20140318-2214&client=org.eclipse.epp.mpc.core&java.version=1.7.0_60&product.version=4.4.0.20140612-0500&ws=win32&platform.version=4.4.0.v20140606-1215&nl=en_US
+!STACK 1
+org.eclipse.core.runtime.CoreException: HTTP Server 'Internal Error': http://marketplace.eclipse.org/api/p/search/apachesolr_search/egit?product=org.eclipse.epp.package.standard.product&os=win32&runtime.version=3.10.0.v20140318-2214&client=org.eclipse.epp.mpc.core&java.version=1.7.0_60&product.version=4.4.0.20140612-0500&ws=win32&platform.version=4.4.0.v20140606-1215&nl=en_US
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.stream(RepositoryTransport.java:180)
+	at sun.reflect.GeneratedMethodAccessor41.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.epp.internal.mpc.core.util.AbstractP2TransportFactory.invokeStream(AbstractP2TransportFactory.java:35)
+	at org.eclipse.epp.internal.mpc.core.util.TransportFactory$1.stream(TransportFactory.java:107)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:128)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:93)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:80)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:272)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService$2.doSearch(CachingMarketplaceService.java:112)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:127)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.search(CachingMarketplaceService.java:109)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceDiscoveryStrategy.performQuery(MarketplaceDiscoveryStrategy.java:335)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog$1.run(MarketplaceCatalog.java:74)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performDiscovery(MarketplaceCatalog.java:364)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performQuery(MarketplaceCatalog.java:72)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer$4.run(MarketplaceViewer.java:404)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.eclipse.ecf.filetransfer.IncomingFileTransferException: HttpComponents connection error response code 500.
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:662)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:885)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:576)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:389)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.read(FileReader.java:240)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.stream(RepositoryTransport.java:172)
+	... 19 more
+!SUBENTRY 2 org.eclipse.equinox.p2.transport.ecf 4 1002 2014-07-20 16:18:21.118
+!MESSAGE HTTP Server 'Internal Error': http://marketplace.eclipse.org/api/p/search/apachesolr_search/egit?product=org.eclipse.epp.package.standard.product&os=win32&runtime.version=3.10.0.v20140318-2214&client=org.eclipse.epp.mpc.core&java.version=1.7.0_60&product.version=4.4.0.20140612-0500&ws=win32&platform.version=4.4.0.v20140606-1215&nl=en_US
+!STACK 1
+org.eclipse.ecf.filetransfer.IncomingFileTransferException: HttpComponents connection error response code 500.
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:662)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:885)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:576)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:389)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.read(FileReader.java:240)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.stream(RepositoryTransport.java:172)
+	at sun.reflect.GeneratedMethodAccessor41.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.epp.internal.mpc.core.util.AbstractP2TransportFactory.invokeStream(AbstractP2TransportFactory.java:35)
+	at org.eclipse.epp.internal.mpc.core.util.TransportFactory$1.stream(TransportFactory.java:107)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:128)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:93)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:80)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:272)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService$2.doSearch(CachingMarketplaceService.java:112)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:127)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.search(CachingMarketplaceService.java:109)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceDiscoveryStrategy.performQuery(MarketplaceDiscoveryStrategy.java:335)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog$1.run(MarketplaceCatalog.java:74)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performDiscovery(MarketplaceCatalog.java:364)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performQuery(MarketplaceCatalog.java:72)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer$4.run(MarketplaceViewer.java:404)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 3 org.eclipse.ecf.identity 4 0 2014-07-20 16:18:21.118
+!MESSAGE HttpComponents connection error response code 500.

@@ -1,0 +1,23 @@
+package epoch;
+
+import java.util.ArrayList;
+
+public class Firsttest {
+
+	public static void main(String[] args) {
+		ArrayList<String> results = new ArrayList<String>();
+		results.add(trash_import());
+
+	}
+
+	private static String trash_import() {
+		ArrayList<String> res = new ArrayList<String>();
+		
+		
+		
+		
+		return watson.string.Concat.arrConcat(res);
+		
+	}
+
+}
