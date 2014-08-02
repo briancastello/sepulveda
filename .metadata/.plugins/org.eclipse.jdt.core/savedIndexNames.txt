@@ -1,3 +1,0 @@
-INDEX VERSION 1.127+C:\Users\assessor\Downloads\Watts\WatsonSpaces\Workspaces\AF\.metadata\.plugins\org.eclipse.jdt.core
-3716777220.index
-3791827282.index
