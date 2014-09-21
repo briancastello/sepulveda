@@ -1,0 +1,23 @@
+Rough timeline for getting a local cyber event running:
+
+-get everyone using GitHub and develop rules for use
+--how to update
+--what to include
+--when to update
+
+Virtualized server event 
+-Develop our configuration - October drill
+--network nodes, services, workstations, overall connectivity
+--operating systems that will be want to target
+--user interface(how to engage the network)
+--develop triggers, flags and points
+
+-define a date for the event
+-assign points of contact
+-need to pull other flights into the mix (for buy in and managing of the work)
+-fit capabilities with tasks
+
+Longer term goals
+-develop relationship with other ca guard units to create competition hubs
+--should be easier if we use the virtualized servers
+- more ideas
