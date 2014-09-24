@@ -12,6 +12,7 @@ const int greenLed2 = 7;
 int redDelay = 5;
 int greenDelay = 5;
 int yellowDelay = 2;
+int counter = 0;
 
 void setup(){
   pinMode(redLed, OUTPUT);
@@ -29,7 +30,18 @@ void setup(){
 }
 
 void loop(){
+  if(counter > 1){
+    digitalWrite(redLed, LOW);
+    digitalWrite(redLed2, LOW);
+    digitalWrite(yellowLed, LOW);
+    digitalWrite(yellowLed2, LOW);
+    digitalWrite(greenLed, HIGH);
+    digitalWrite(greenLed2, HIGH);
+    delay(1000);
+  }
+else{
   digitalWrite(redLed, HIGH);
+  delay(400);
   digitalWrite(redLed2, LOW);
   digitalWrite(greenLed2, HIGH);
   for(int i = 1; i <= redDelay; i++){
@@ -40,10 +52,11 @@ void loop(){
     for(int i = 1; i <= yellowDelay; i++){
       delay(1000);
     }
-  digitalWrite(redLed, LOW);
-  digitalWrite(greenLed, HIGH);
-  digitalWrite(yellowLed2, LOW);
   digitalWrite(redLed2, HIGH);
+  digitalWrite(yellowLed2, LOW);
+  delay(400);
+  digitalWrite(greenLed, HIGH);
+  digitalWrite(redLed, LOW);
    for(int i = 1; i <= greenDelay; i++){
    delay(1000);
   }
@@ -54,4 +67,6 @@ void loop(){
    delay(1000);
   }
   digitalWrite(yellowLed, LOW);
+}
+  counter++;
 }
